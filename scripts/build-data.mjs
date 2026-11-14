@@ -141,11 +141,41 @@ const rebrand = (s) =>
   s
     .replace(/thecustomizedshop\.pk/gi, (m) => (m[0] === "T" ? "UMGiftCollection.com" : "umgiftcollection.com"))
     .replace(/TheCustomizedShop/g, "UMGiftCollection")
-    .replace(/the customized shop/gi, "UM Gift Collection");
+    .replace(/the customized shop/gi, "UM Gift Collection")
+    // New contact details supplied by the owner (Nov 2026).
+    .replace(/923148337494/g, "923090804400")
+    .replace(/0314[- ]?8337494/g, "03090804400")
+    .replace(/Jamshed Road, Karachi/g, "Gujjar Street, Lahore")
+    .replace(/instagram\.com\/thecustomizedshop1\/?/g, "instagram.com/umgiftcollection")
+    .replace(/@thecustomizedshop1/g, "@umgiftcollection");
+
+// ---------- relocation ----------
+// The owner moved the shop from Karachi to Lahore (Nov 2026) and approved
+// updating the copy. Only statements that depend on the shop's own location
+// change: where it is based, and the same-city 1–2 day express delivery.
+// City lists ("we deliver to Karachi, Lahore…"), the "Karachi" T-shirt design
+// and customer quotes are left untouched.
+const relocate = (s) =>
+  s
+    .replace(/Based in Karachi/g, "Based in Lahore")
+    .replace(/our gift shop in Karachi, Pakistan/g, "our gift shop in Lahore, Pakistan")
+    .replace(/Karachi customers (get their orders fastest|can choose)/g, "Lahore customers $1")
+    .replace(/outside Karachi/g, "outside Lahore")
+    .replace(/inside Karachi/g, "inside Lahore")
+    .replace(/Karachi orders (can go express|typically arrive)/g, "Lahore orders $1")
+    .replace(/express in Karachi/g, "express in Lahore")
+    .replace(/is available in Karachi/g, "is available in Lahore")
+    .replace(/In Karachi, express delivery/g, "In Lahore, express delivery")
+    // Homepage delivery table: Lahore becomes the 1–2 day city, Karachi moves to 3–4 days.
+    .replace(
+      "<tr><td><p>Karachi</p></td><td><p>All customized gifts</p></td><td><p>1–2 Days</p></td><td><p>✅ Available</p></td></tr><tr><td><p>Lahore</p></td><td><p>All customized gifts</p></td><td><p>3–4 Days</p></td><td><p>✅ Available</p></td></tr>",
+      "<tr><td><p>Lahore</p></td><td><p>All customized gifts</p></td><td><p>1–2 Days</p></td><td><p>✅ Available</p></td></tr><tr><td><p>Karachi</p></td><td><p>All customized gifts</p></td><td><p>3–4 Days</p></td><td><p>✅ Available</p></td></tr>",
+    );
+const localize = (s) => relocate(rebrand(s));
 
 // ---------- write ----------
-fs.writeFileSync(path.join(OUT, "products.json"), rebrand(JSON.stringify(products)));
-fs.writeFileSync(path.join(OUT, "categories.json"), rebrand(JSON.stringify(categories)));
+fs.writeFileSync(path.join(OUT, "products.json"), localize(JSON.stringify(products)));
+fs.writeFileSync(path.join(OUT, "categories.json"), localize(JSON.stringify(categories)));
 fs.writeFileSync(path.join(OUT, "menu.json"), JSON.stringify(menuConfig, null, 1));
 // Split the FAQ block (h4 "Q: …" + answer paragraphs) out of the SEO copy.
 const faqStart = seo.search(/<h3>(?:<strong>)?FAQs/i);
@@ -157,10 +187,10 @@ if (faqStart >= 0) {
   for (const m of block.matchAll(/<h4>([\s\S]*?)<\/h4>([\s\S]*?)(?=<h4>|$)/g)) {
     const q = m[1].replace(/<[^>]+>/g, "").replace(/^\s*Q:\s*/, "").trim();
     const a = m[2].replace(/<\/?(div|label|input)[^>]*>/g, "").trim();
-    if (q && a) faqs.push({ q: decodeEntities(rebrand(q)), a: rebrand(a) });
+    if (q && a) faqs.push({ q: decodeEntities(localize(q)), a: localize(a) });
   }
 }
-fs.writeFileSync(path.join(OUT, "home-content.json"), JSON.stringify({ seoHtml: rebrand(seoBody), faqs }));
+fs.writeFileSync(path.join(OUT, "home-content.json"), JSON.stringify({ seoHtml: localize(seoBody), faqs }));
 if (fs.existsSync(path.join(OUT, "home-seo.html"))) fs.unlinkSync(path.join(OUT, "home-seo.html"));
 console.log("home faqs", faqs.length);
 

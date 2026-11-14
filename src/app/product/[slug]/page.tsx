@@ -70,7 +70,7 @@ export default async function ProductPage({ params }: Props) {
   const aside = (
     <ul className="mt-6 grid gap-3 sm:grid-cols-2">
       {[
-        { Icon: Truck, t: "Delivery across Pakistan", d: `Karachi ${site.delivery.karachi}, other cities ${site.delivery.elsewhere}.` },
+        { Icon: Truck, t: "Delivery across Pakistan", d: `${site.delivery.localCity} ${site.delivery.local}, other cities ${site.delivery.elsewhere}.` },
         { Icon: PackageCheck, t: `Free over Rs ${site.freeDeliveryThreshold.toLocaleString("en-PK")}`, d: `Otherwise Rs ${site.deliveryFee} delivery.` },
         { Icon: Clock, t: `Rs ${site.advancePayment} advance`, d: "Confirms your order. Pay the balance on delivery." },
         { Icon: RotateCcw, t: "Free replacement", d: "If it arrives damaged, wrong or faulty." },
@@ -108,7 +108,7 @@ export default async function ProductPage({ params }: Props) {
       a: (
         <div className="prose-tcs">
           <p>
-            We deliver everywhere in Pakistan. Karachi orders typically arrive in {site.delivery.karachi}; other cities in {site.delivery.elsewhere}. Delivery is Rs {site.deliveryFee}, and free on orders over Rs{" "}
+            We deliver everywhere in Pakistan. {site.delivery.localCity} orders typically arrive in {site.delivery.local}; other cities in {site.delivery.elsewhere}. Delivery is Rs {site.deliveryFee}, and free on orders over Rs{" "}
             {site.freeDeliveryThreshold.toLocaleString("en-PK")}.
           </p>
           <p>

@@ -73,7 +73,7 @@ export const howToStepsLong = [
 ];
 
 export const howToFaqs = [
-  { q: "How long does delivery take?", a: "Standard delivery is 3–5 business days across Pakistan. Express delivery (1–2 days) is available in Karachi." },
+  { q: "How long does delivery take?", a: "Standard delivery is 3–5 business days across Pakistan. Express delivery (1–2 days) is available in Lahore." },
   { q: "Do I need to send my photo?", a: "For photo-based products, share your image directly on WhatsApp after placing the order. Our team will guide you." },
   { q: "Can I order in bulk for events?", a: "Absolutely! We offer bulk discounts for weddings, corporate events, and special occasions. Message us for a custom quote." },
   { q: "What payment methods are accepted?", a: "We accept EasyPaisa, JazzCash, bank transfer, and cash on delivery (COD) in select areas." },
@@ -86,6 +86,6 @@ export const returnFaqs = [
   { q: "My order arrived damaged. What do I do?", a: "Message us on WhatsApp within 48 hours of delivery with your order number and clear photos or a video of the damage. Once verified, we remake and reship your item free of charge. If we cannot remake it, we refund you in full." },
   { q: "Can I cancel my order?", a: "Yes, as long as production has not started. Message us on WhatsApp as soon as possible and we refund your Rs 250 advance in full. Once your item has gone into production it cannot be cancelled, because the materials and personalization are already committed to your design." },
   { q: "Do I pay for the replacement or its delivery?", a: "No. If the fault is ours (damaged, incorrect or faulty), the replacement and its delivery are completely free." },
-  { q: "How long does a replacement take?", a: "Once your claim is approved, a replacement is produced and dispatched on priority: usually 1–2 days within Karachi and 3–5 days elsewhere in Pakistan." },
+  { q: "How long does a replacement take?", a: "Once your claim is approved, a replacement is produced and dispatched on priority: usually 1–2 days within Lahore and 3–5 days elsewhere in Pakistan." },
   { q: "How can I avoid a mistake on my order?", a: "Double-check every spelling, date and photo before confirming, and review the design preview we share with you on WhatsApp. Once you approve the preview, we produce exactly what was approved." },
 ];

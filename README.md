@@ -32,7 +32,7 @@ This site keeps that flow and makes it better.
 2. The cart (saved in the browser) holds every customization, recalculates bulk
    pricing when quantities change, applies the `TCS10` promo, and works out
    delivery against the free-delivery threshold.
-3. "Order on WhatsApp" opens a chat with **0314 8337494** pre-filled with a
+3. "Order on WhatsApp" opens a chat with **0309 0804400** pre-filled with a
    formatted order: items, options, quantities, totals and optional delivery
    details. Shoppers can preview the message first.
 4. Customization photos never leave the shopper's device. On phones that
@@ -104,6 +104,6 @@ Also to decide:
 - **Logo**: the old logo reads "The Customized Shop", so a "UM" monogram
   (`src/components/ui/Logo.tsx`, `src/app/icon.svg`) stands in for it. Swap in
   the final logo when ready.
-- **Instagram**: still `@thecustomizedshop1`, in `src/lib/site.ts`.
+- **Contact & socials** (phone/WhatsApp 03090804400, Gujjar Street, Lahore, Instagram, TikTok, Facebook, YouTube, X) live in `src/lib/site.ts`. Old phone/address mentions in product copy are rewritten by `npm run data`.
 - **Promo code**: `TCS10` is kept as published.
 - **Wishlist** is new (saved per browser); the original had none.

@@ -75,9 +75,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                 telephone: `+${site.whatsappNumber}`,
                 foundingDate: String(site.foundedYear),
                 alternateName: site.formerName,
-                address: { "@type": "PostalAddress", streetAddress: "Jamshed Road", addressLocality: "Karachi", addressCountry: "PK" },
+                address: { "@type": "PostalAddress", streetAddress: site.addressParts.street, addressLocality: site.addressParts.city, addressCountry: site.addressParts.country },
                 areaServed: { "@type": "Country", name: "Pakistan" },
-                sameAs: [site.instagramUrl],
+                sameAs: site.socials.map((s) => s.url),
               },
               {
                 "@type": "WebSite",

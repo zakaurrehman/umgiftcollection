@@ -3,7 +3,7 @@ import { site } from "@/lib/site";
 import { Stagger, StaggerItem } from "@/components/ui/motion";
 
 const items = [
-  { Icon: Truck, title: "Nationwide delivery", text: `Every city in Pakistan. Karachi in ${site.delivery.karachi}, elsewhere ${site.delivery.elsewhere}.` },
+  { Icon: Truck, title: "Nationwide delivery", text: `Every city in Pakistan. ${site.delivery.localCity} in ${site.delivery.local}, elsewhere ${site.delivery.elsewhere}.` },
   { Icon: Palette, title: "100% customizable", text: "Add names, photos & messages to any gift." },
   { Icon: MessageCircle, title: "Order on WhatsApp", text: "Fast, friendly help confirming your order." },
   { Icon: HeartHandshake, title: `${site.stats.rating} rated`, text: `Free delivery on orders over Rs ${site.freeDeliveryThreshold.toLocaleString("en-PK")}.` },

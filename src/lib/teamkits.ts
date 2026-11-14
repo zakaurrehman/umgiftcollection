@@ -154,7 +154,7 @@ export const football: SportConfig = {
     { q: "What is the difference between Standard and Best Quality?", a: "Standard is a light, breathable sports fabric that works great for regular matches. Best Quality uses a premium fabric that feels softer, holds colour better and gives a more professional look, ideal if your team plays all season." },
     { q: "Can I mix sizes in one order?", a: "Yes. Send us a size next to each player's name and we print every jersey in the right size, kids and adults in the same order." },
     { q: "How long does a bulk jersey order take?", a: "It depends on the quantity and how quickly the mockup is approved. We confirm a clear delivery date along with your mockup, so tell us your match or tournament date when you message." },
-    { q: "Do you deliver team jerseys outside Karachi?", a: "Yes, we deliver team kits all over Pakistan, including Lahore, Islamabad, Rawalpindi, Faisalabad, Multan, Peshawar, Hyderabad and smaller cities too." },
+    { q: "Do you deliver team jerseys outside Lahore?", a: "Yes, we deliver team kits all over Pakistan, including Karachi, Islamabad, Rawalpindi, Faisalabad, Multan, Peshawar, Hyderabad and smaller cities too." },
     { q: "Can you make a kit inspired by a club or country style?", a: "Of course. Pick any colours, fades or stripes you like from our designs and we build your team's own version with your name and logo on it." },
   ],
   guideTitle: "Custom Football Jerseys in Pakistan: A Quick Guide for Team Captains",

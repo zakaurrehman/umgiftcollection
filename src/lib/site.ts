@@ -16,11 +16,20 @@ export const site = {
   description:
     "Customized gifts in Pakistan: photo mugs, frames, cushions, lamps & name gifts, personalized for birthdays, anniversaries and every occasion, delivered across Pakistan.",
 
-  phoneDisplay: "03148337494",
-  whatsappNumber: "923148337494",
-  address: "Jamshed Road, Karachi, Pakistan",
-  instagramHandle: "@thecustomizedshop1",
-  instagramUrl: "https://www.instagram.com/thecustomizedshop1/",
+  // Contact details supplied by the owner (Nov 2026). Phone and WhatsApp are the same number.
+  phoneDisplay: "03090804400",
+  whatsappNumber: "923090804400", // international format for wa.me / tel: links
+  address: "Gujjar Street, Lahore, Pakistan",
+  addressParts: { street: "Gujjar Street", city: "Lahore", country: "PK" },
+  instagramHandle: "@umgiftcollection",
+  instagramUrl: "https://www.instagram.com/umgiftcollection",
+  socials: [
+    { id: "instagram", label: "Instagram", url: "https://www.instagram.com/umgiftcollection" },
+    { id: "tiktok", label: "TikTok", url: "https://www.tiktok.com/@umgiftcollection" },
+    { id: "facebook", label: "Facebook", url: "https://www.facebook.com/share/19ugtBjG4p/" },
+    { id: "youtube", label: "YouTube", url: "https://youtube.com/@umgiftcollection" },
+    { id: "x", label: "X", url: "https://x.com/umgiftcolection" },
+  ],
   supportHours: "9 AM to 11 PM, every day", // from the bulk-order pages
   foundedYear: 2020,
 
@@ -51,8 +60,9 @@ export const site = {
   /** Homepage CTA: "Use code TCS10 for 10% off your first order." */
   promo: { code: "TCS10", percent: 10, label: "10% off your first order" },
 
-  /** Delivery times from the homepage FAQ and How to Order page. */
-  delivery: { karachi: "1–2 days", elsewhere: "3–5 days" },
+  /** Delivery times from the homepage FAQ and How to Order page. Express 1–2 day
+   *  delivery is same-city, so it moved from Karachi to Lahore with the shop. */
+  delivery: { localCity: "Lahore", local: "1–2 days", elsewhere: "3–5 days" },
   paymentMethods: "EasyPaisa, JazzCash, bank transfer, and cash on delivery (COD) in select areas",
 
   /**

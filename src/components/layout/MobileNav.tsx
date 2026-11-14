@@ -4,14 +4,14 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { LogoMark, Wordmark } from "@/components/ui/Logo";
 import { AnimatePresence, motion } from "motion/react";
-import { ChevronDown, Heart, Package, Search, Star, Users, X, BookOpen, RotateCcw } from "lucide-react";
+import { ChevronDown, Heart, Package, Phone, Search, Star, Users, X, BookOpen, RotateCcw } from "lucide-react";
 import { useEffect, useState } from "react";
 import type { NavGroup } from "@/lib/types";
 import { cn } from "@/lib/format";
 import { site, whatsappLink, defaultWhatsappText } from "@/lib/site";
 import { useUI } from "@/store/ui";
 import { Overlay } from "@/components/ui/Overlay";
-import { InstagramIcon, WhatsAppIcon } from "@/components/ui/icons";
+import { SocialIcon, WhatsAppIcon } from "@/components/ui/icons";
 
 const featured = [
   { href: "/category/birthday-gifts/", label: "Birthday Gifts" },
@@ -120,10 +120,22 @@ export function MobileNav({ groups }: { groups: NavGroup[] }) {
           <a href={whatsappLink(defaultWhatsappText)} target="_blank" rel="noopener noreferrer" className="flex h-12 items-center justify-center gap-2 rounded-full bg-wa font-semibold text-white">
             <WhatsAppIcon className="size-5" /> WhatsApp
           </a>
-          <a href={site.instagramUrl} target="_blank" rel="noopener noreferrer" className="flex h-12 items-center justify-center gap-2 rounded-full bg-plum-900 font-semibold text-white">
-            <InstagramIcon className="size-5" /> Instagram
+          <a href={`tel:+${site.whatsappNumber}`} className="flex h-12 items-center justify-center gap-2 rounded-full bg-plum-900 font-semibold text-white">
+            <Phone className="size-[18px]" aria-hidden="true" /> Call
           </a>
         </div>
+        <p className="mt-3 text-center text-sm text-ink-soft">
+          {site.phoneDisplay} · {site.address}
+        </p>
+        <ul className="mt-5 flex justify-center gap-2">
+          {site.socials.map((s) => (
+            <li key={s.id}>
+              <a href={s.url} target="_blank" rel="noopener noreferrer" aria-label={`${site.name} on ${s.label}`} className="grid size-11 place-items-center rounded-full border border-line bg-white text-plum-900 hover:bg-plum-900 hover:text-white">
+                <SocialIcon id={s.id} className="size-[18px]" />
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     </Overlay>
   );

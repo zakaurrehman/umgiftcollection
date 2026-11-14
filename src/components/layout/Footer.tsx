@@ -2,7 +2,7 @@ import Link from "next/link";
 import { MapPin, Phone } from "lucide-react";
 import { site, whatsappLink, defaultWhatsappText } from "@/lib/site";
 import { LogoMark } from "@/components/ui/Logo";
-import { InstagramIcon, WhatsAppIcon } from "@/components/ui/icons";
+import { SocialIcon, WhatsAppIcon } from "@/components/ui/icons";
 
 // Link columns mirror the original store's footer.
 const cols = [
@@ -84,14 +84,6 @@ export function Footer() {
                   </span>
                 </a>
               </li>
-              <li>
-                <a href={site.instagramUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center gap-3 hover:text-white">
-                  <span className="grid size-9 place-items-center rounded-full bg-gradient-to-br from-berry-500 to-peach-500 text-white">
-                    <InstagramIcon className="size-[18px]" />
-                  </span>
-                  <span className="font-semibold text-white">{site.instagramHandle}</span>
-                </a>
-              </li>
               <li className="flex items-center gap-3">
                 <span className="grid size-9 place-items-center rounded-full bg-white/10">
                   <MapPin className="size-[18px]" aria-hidden="true" />
@@ -106,6 +98,23 @@ export function Footer() {
                   {site.phoneDisplay}
                 </a>
               </li>
+            </ul>
+            <p className="mb-3 mt-8 text-xs font-bold uppercase tracking-[0.14em] text-white">Follow us</p>
+            <ul className="flex flex-wrap gap-2">
+              {site.socials.map((s) => (
+                <li key={s.id}>
+                  <a
+                    href={s.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${site.name} on ${s.label}`}
+                    title={s.label}
+                    className="grid size-11 place-items-center rounded-full bg-white/10 text-white transition-[background-color,transform] duration-300 hover:-translate-y-0.5 hover:bg-berry-600"
+                  >
+                    <SocialIcon id={s.id} className="size-[18px]" />
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
