@@ -1,0 +1,392 @@
+[
+ {
+  "icon": "🎉",
+  "items": [
+   {
+    "slug": "birthday-gifts"
+   },
+   {
+    "slug": "anniversary-gifts"
+   },
+   {
+    "slug": "marriage-gifts"
+   },
+   {
+    "slug": "birthday-deals"
+   },
+   {
+    "icon": "🏷️",
+    "slug": "men-s-deal"
+   },
+   {
+    "icon": "🏷️",
+    "slug": "12-rabi-ul-awal-new-arrival"
+   },
+   {
+    "slug": "independence-day-collection"
+   }
+  ],
+  "label": "Gifts by Occasion"
+ },
+ {
+  "icon": "🎁",
+  "items": [
+   {
+    "slug": "birthday-gifts-for-men"
+   },
+   {
+    "slug": "birthday-gifts-for-husband"
+   },
+   {
+    "slug": "birthday-gifts-for-wife"
+   },
+   {
+    "slug": "birthday-gifts-for-women"
+   },
+   {
+    "slug": "birthday-gifts-for-girls"
+   }
+  ],
+  "label": "Gifts by Recipient"
+ },
+ {
+  "icon": "🏷️",
+  "items": [
+   {
+    "icon": "🎁",
+    "slug": "customize-gifts-under-1000",
+    "label": "All Gifts Under Rs 1000"
+   },
+   {
+    "icon": "💸",
+    "slug": "gifts-under-500",
+    "label": "Gifts Under Rs 500"
+   },
+   {
+    "icon": "👔",
+    "slug": "gifts-for-husband-under-1000",
+    "label": "For Husband"
+   },
+   {
+    "icon": "💍",
+    "slug": "gifts-for-wife-under-1000",
+    "label": "For Wife"
+   },
+   {
+    "icon": "💙",
+    "slug": "gifts-for-boyfriend-under-1000",
+    "label": "For Boyfriend"
+   },
+   {
+    "icon": "💖",
+    "slug": "gifts-for-girlfriend-under-1000",
+    "label": "For Girlfriend"
+   },
+   {
+    "icon": "🧢",
+    "slug": "gifts-for-boys-under-1000",
+    "label": "For Boys"
+   },
+   {
+    "icon": "🎀",
+    "slug": "gifts-for-girls-under-1000",
+    "label": "For Girls"
+   },
+   {
+    "icon": "🌷",
+    "slug": "gifts-for-mother-under-1000",
+    "label": "For Mother"
+   },
+   {
+    "icon": "👨",
+    "slug": "gifts-for-father-under-1000",
+    "label": "For Father"
+   },
+   {
+    "icon": "🌸",
+    "slug": "gifts-for-sister-under-1000",
+    "label": "For Sister"
+   },
+   {
+    "icon": "🤝",
+    "slug": "gifts-for-best-friend-under-1000",
+    "label": "For Best Friend"
+   },
+   {
+    "icon": "🧸",
+    "slug": "gifts-for-kids-under-1000",
+    "label": "For Kids"
+   },
+   {
+    "icon": "🎂",
+    "slug": "birthday-gifts-under-1000",
+    "label": "Birthday Gifts"
+   },
+   {
+    "icon": "💞",
+    "slug": "anniversary-gifts-under-1000",
+    "label": "Anniversary Gifts"
+   }
+  ],
+  "label": "Gifts Under Rs 1000"
+ },
+ {
+  "icon": "💍",
+  "items": [
+   {
+    "slug": "customized-jewellery"
+   },
+   {
+    "slug": "customized-pendants"
+   },
+   {
+    "slug": "earrings"
+   },
+   {
+    "slug": "lockets"
+   },
+   {
+    "slug": "locket-and-bracelet-combo"
+   },
+   {
+    "slug": "bracelets"
+   },
+   {
+    "slug": "bracelets-for-men"
+   },
+   {
+    "slug": "customize-ring"
+   },
+   {
+    "slug": "couple-watches"
+   }
+  ],
+  "label": "Jewellery & Accessories"
+ },
+ {
+  "icon": "🏠",
+  "items": [
+   {
+    "slug": "pillows-cushions"
+   },
+   {
+    "slug": "frames"
+   },
+   {
+    "slug": "7-color-lamps"
+   },
+   {
+    "slug": "customize-clocks"
+   }
+  ],
+  "label": "Home & Décor"
+ },
+ {
+  "icon": "✨",
+  "items": [
+   {
+    "slug": "mugs"
+   },
+   {
+    "slug": "phone-cases"
+   },
+   {
+    "slug": "wallets"
+   },
+   {
+    "slug": "customize-bottle"
+   },
+   {
+    "icon": "🏷️",
+    "slug": "customize-keychain"
+   },
+   {
+    "slug": "customize-pen-with-box"
+   },
+   {
+    "icon": "🏷️",
+    "slug": "customize-dairy"
+   }
+  ],
+  "label": "Everyday Essentials"
+ },
+ {
+  "icon": "👕",
+  "items": [
+   {
+    "slug": "customize-t-shirts"
+   },
+   {
+    "slug": "custom-printed-dropshoulder-t-shirts",
+    "label": "Drop Shoulder T-Shirts"
+   },
+   {
+    "slug": "custom-printed-round-neck-t-shirts",
+    "label": "Round Neck T-Shirts"
+   },
+   {
+    "slug": "custom-printed-polo-t-shirts",
+    "label": "Polo T-Shirts"
+   },
+   {
+    "slug": "custom-printed-couple-t-shirts",
+    "label": "Couple T-Shirts"
+   },
+   {
+    "slug": "custom-printed-black-t-shirts",
+    "label": "Black T-Shirts"
+   }
+  ],
+  "label": "Custom T-Shirts"
+ },
+ {
+  "icon": "⚽",
+  "items": [
+   {
+    "icon": "⚽",
+    "slug": "football-jerseys-price-in-pakistan",
+    "label": "All Football Jerseys"
+   },
+   {
+    "icon": "🎽",
+    "slug": "custom-football-shirts",
+    "label": "Custom Football Shirts"
+   },
+   {
+    "icon": "👨",
+    "slug": "mens-football-jersey-price-in-pakistan",
+    "label": "Men's Football"
+   },
+   {
+    "icon": "👩",
+    "slug": "girls-football-jersey-price-in-pakistan",
+    "label": "Women's Football"
+   },
+   {
+    "icon": "🧒",
+    "slug": "kids-football-jersey-price-in-pakistan",
+    "label": "Kids Football"
+   },
+   {
+    "icon": "🏅",
+    "slug": "men-sports-jersey-price-in-pakistan",
+    "label": "Men's Sports Jersey"
+   },
+   {
+    "icon": "🏅",
+    "slug": "girls-sports-jersey-price-in-pakistan",
+    "label": "Women's Sports Jersey"
+   }
+  ],
+  "label": "Football Jerseys"
+ },
+ {
+  "icon": "🏆",
+  "items": [
+   {
+    "icon": "🔵",
+    "slug": "barcelona-jerseys-price-in-pakistan",
+    "label": "Barcelona"
+   },
+   {
+    "icon": "⚪",
+    "slug": "real-madrid-jerseys-price-in-pakistan",
+    "label": "Real Madrid"
+   },
+   {
+    "icon": "🔴",
+    "slug": "manchester-united-jerseys-price-in-pakistan",
+    "label": "Manchester United"
+   },
+   {
+    "icon": "🩵",
+    "slug": "manchester-city-jerseys-price-in-pakistan",
+    "label": "Manchester City"
+   },
+   {
+    "icon": "🔴",
+    "slug": "liverpool-jerseys-price-in-pakistan",
+    "label": "Liverpool"
+   },
+   {
+    "icon": "🔵",
+    "slug": "chelsea-jerseys-price-in-pakistan",
+    "label": "Chelsea"
+   },
+   {
+    "icon": "🔴",
+    "slug": "bayern-munich-jerseys-price-in-pakistan",
+    "label": "Bayern Munich"
+   },
+   {
+    "icon": "🔵",
+    "slug": "psg-jerseys-price-in-pakistan",
+    "label": "PSG"
+   },
+   {
+    "icon": "🩷",
+    "slug": "inter-miami-jerseys-price-in-pakistan",
+    "label": "Inter Miami"
+   },
+   {
+    "icon": "🟡",
+    "slug": "al-nassr-jerseys-price-in-pakistan",
+    "label": "Al Nassr"
+   }
+  ],
+  "label": "Jerseys by Club"
+ },
+ {
+  "icon": "🌍",
+  "items": [
+   {
+    "icon": "🇦🇷",
+    "slug": "argentina-jerseys-price-in-pakistan",
+    "label": "Argentina"
+   },
+   {
+    "icon": "🇧🇷",
+    "slug": "brazil-jerseys-price-in-pakistan",
+    "label": "Brazil"
+   },
+   {
+    "icon": "🇵🇹",
+    "slug": "portugal-jerseys-price-in-pakistan",
+    "label": "Portugal"
+   },
+   {
+    "icon": "🇪🇸",
+    "slug": "spain-jerseys-price-in-pakistan",
+    "label": "Spain"
+   },
+   {
+    "icon": "🇫🇷",
+    "slug": "france-jerseys-price-in-pakistan",
+    "label": "France"
+   },
+   {
+    "icon": "🇩🇪",
+    "slug": "germany-jerseys-price-in-pakistan",
+    "label": "Germany"
+   },
+   {
+    "icon": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+    "slug": "england-jerseys-price-in-pakistan",
+    "label": "England"
+   }
+  ],
+  "label": "Jerseys by Country"
+ },
+ {
+  "icon": "🧶",
+  "items": [
+   {
+    "slug": "custom-crochet-gifts"
+   },
+   {
+    "slug": "chocolate-bouquet"
+   }
+  ],
+  "label": "Handmade & Treats"
+ }
+]
